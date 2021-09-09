@@ -1,4 +1,4 @@
-import requests, pickle, os.path, keyboard
+import requests, pickle, os.path
 
 def checkDiscount(di):
     payload = {"appids" : str(di)}
