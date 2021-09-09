@@ -1,2 +1,2 @@
 # SteamBot
-Steam Integration for a Discord bot I am currently working on.
+Discord bot that interacts with Steam I am currently working on.
