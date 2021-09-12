@@ -39,8 +39,8 @@ def wishlist(applist):
     ids2, names2= idFinder(applist, game_name)
     selname2, selid2 = idSelector(ids2, names2)
     exact_name = nameFinder(applist, selid2)
-    if os.path.isfile("games.p"):
-        big_list = pickle.load(open("games.p", "rb"))
+    if os.path.isfile("Pickle File"):
+        big_list = pickle.load(open("Pickle File", "rb"))
     else:
         big_list = [[],[]]
     
@@ -48,10 +48,10 @@ def wishlist(applist):
     big_list[0].append(selid2)
     big_list[1].append(exact_name)
     print(big_list)
-    pickle.dump(big_list, open("games.p", "wb+"))
+    pickle.dump(big_list, open("Pickle File", "wb+"))
         
 def wishlistRemover():
-    big_list = pickle.load(open("games.p", "rb"))
+    big_list = pickle.load(open("Pickle File", "rb"))
      
     
     game_name = input("Enter game: ")
@@ -76,10 +76,10 @@ def wishlistRemover():
     big_list[0].remove(selid2)
     big_list[1].remove(exact_name)
     print(big_list)
-    pickle.dump(big_list, open("games.p", "wb"))
+    pickle.dump(big_list, open("Pickle File", "wb"))
                 
 def wishlistChecker():
-    big_list = pickle.load(open("games.p", "rb"))
+    big_list = pickle.load(open("Pickle File", "rb"))
     printed_discounts = []
     printed_prices = []
     if len(big_list[0]) > 0:
