@@ -98,7 +98,7 @@ json2 = r2.json()
 applist = json2["applist"]["apps"]
 print("Press the 'CTRL' key to search for a game." + "\n" + "Press the 'Alt' key to add a game to your discount notification list." + "\n" + "Press the 'Shift' key to remove a game from your discount notification list." + "\n" + "Press the 'Q' key to quit the program")
 
-def gameSearch(user_input, input_game)
+def gameSearch(user_input, input_game):
     if user_input.lower() == "search":
         game_name = input_game
         lis = idFinder(applist, game_name)
