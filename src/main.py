@@ -173,4 +173,4 @@ async def before_wishlistChecker():
 
 
 wishlistChecker.start()
-bot.run("ODg1Mjg4MzAxNzgxNzIxMDg4.GQ7Y0_.v3mluzsPTWMfQWoI5gbnFfk5aNEWfdBv5giAhs")
+bot.run("API KEY HERE")
